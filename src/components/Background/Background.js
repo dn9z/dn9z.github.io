@@ -58,12 +58,12 @@ const Background = () => {
           // push particles when close to mouse
           particlesArrayRef.current[i].speedX =
             (particlesArrayRef.current[i].posRelativeToMouse.x / distance) *
-            2.4;
+            1.3;
           particlesArrayRef.current[i].speedY =
             (particlesArrayRef.current[i].posRelativeToMouse.y / distance) *
-            2.4;
+            1.4;
           // shrink particles faster
-          particlesArrayRef.current[i].shrinkSpeed = 0.07;
+          // particlesArrayRef.current[i].shrinkSpeed = 0.07;
         }
       }
 
