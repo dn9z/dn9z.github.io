@@ -151,8 +151,13 @@ const Navbar = () => {
               },
             }}
           >
-            <a href="mailto:d.ilyasoglu@outlook.de">Contact</a>
-              
+            <a
+              href="mailto:d.ilyasoglu@outlook.de"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Contact
+            </a>
           </motion.li>
           <motion.li
             variants={navBarItemVariants}
@@ -166,6 +171,8 @@ const Navbar = () => {
           >
             <a
               href="https://github.com/dn9z"
+              target="_blank"
+              rel="noreferrer"
               onClick={() => {
                 setCheckbox(false);
                 console.log(checkbox);
@@ -193,7 +200,9 @@ const Navbar = () => {
             }}
           >
             <a
-              href="https://github.com/dn9z"
+              href="https://www.linkedin.com/in/deniz-han-ilyasoglu-37a419223/"
+              target="_blank"
+              rel="noreferrer"
               onClick={() => {
                 setCheckbox(false);
                 console.log(checkbox);
