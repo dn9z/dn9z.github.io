@@ -6,7 +6,7 @@ import { AnimProvider } from "./components/Context/Context";
 
 ReactDOM.render(
     <React.StrictMode>
-      <BrowserRouter basename="/">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </React.StrictMode>,
