@@ -63,7 +63,7 @@ const Background = () => {
             (particlesArrayRef.current[i].posRelativeToMouse.y / distance) *
             0.4;
           // shrink particles faster
-          particlesArrayRef.current[i].shrinkSpeed = 0.02;
+          particlesArrayRef.current[i].shrinkSpeed = 0.01;
         }
       }
 
@@ -151,7 +151,7 @@ const Background = () => {
       // this.color = `hsl(${hue},100%,50%)`;
       this.color = "rgba(0,150,255,";
       this.color = `hsla(${hueRef.current},100%,50%,`;
-      this.shrinkSpeed = 0.005;
+      this.shrinkSpeed = 0.002;
       this.posRelativeToMouse = {
         x: this.x - mouse.current.x,
         y: this.y - mouse.current.y,
