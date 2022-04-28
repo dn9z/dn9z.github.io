@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./TopBarAnim.scss";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { MyContext } from "../../../Context/Context";
 
 const topBarAnimVariants = {
@@ -26,7 +26,6 @@ const topBarAnimVariants = {
 
 const TopBarAnim = () => {
   const { location } = useContext(MyContext);
-  // console.log(location.pathname)
   return (
     <motion.div
       className="topAnim-moving-bar"

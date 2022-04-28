@@ -27,13 +27,11 @@ const Work = () => {
     hidden: {
       opacity:0,
       transform: "matrix3d(1,0,0.00,0,0.00,0.02,1.00,-0.002,0,-1,0.02,0,0,0,0,1)",
-      // y: 0,
     },
     show: (i) => {
       return {
         opacity:[0,1,1,1],
         transform: "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)",
-        // y: i === 0 ? "15rem" : i === 1 ? "10rem" : i === 2 && 0,
       };
     },
   };
@@ -60,7 +58,6 @@ const Work = () => {
                 perspective={500}
                 glareEnable={true}
                 glareMaxOpacity={0.45}
-                // glareBorderRadius="0.5rem"
                 scale={1.02}
                 gyroscope={true}
 
@@ -70,9 +67,6 @@ const Work = () => {
                   <h1>{ele.name}</h1>
                 </div>
               </Tilt>
-              {/* <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eligendi modi corrupti ullam explicabo quo quasi tempora adipisci autem, numquam officiis iusto quaerat consequuntur expedita. Non, ab deleniti. Reiciendis, praesentium.</p>
-              </div> */}
             </motion.div>
           );
         })}

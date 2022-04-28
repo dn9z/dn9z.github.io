@@ -1,3 +1,3 @@
-# .env 
+# Welcome to my Portfolio's repo!
 
-Added ```GENERATE_SOURCEMAP=false``` to .env, to suppress warnings about source map coming from react-parallax-tilt
+## It is work in progress, so watch out for updates!

@@ -6,7 +6,6 @@ const MyContext = createContext(null)
 const MyProvider = ({children}) => {
 
   const location = useLocation()
-  // console.log(location)
   return(
     <MyContext.Provider value={{location}}>
       {children}

@@ -11,8 +11,6 @@ const navBarItemVariants = {
   show: {
     y: 0,
     transition: {
-      // damping:1
-      // stiffness:50
       type: "spring",
       stiffness: 50,
       damping: 10,
@@ -21,7 +19,7 @@ const navBarItemVariants = {
 };
 
 const Navbar = () => {
-  const windowSize = useWindowSize();
+  // const windowSize = useWindowSize();
   const [checkbox, setCheckbox] = useState(false);
 
   return (
@@ -55,7 +53,6 @@ const Navbar = () => {
 
       <nav>
         <motion.ul
-          // variants={navBarItemVariants}
           transition={{ staggerChildren: 0.3 }}
           initial="hidden"
           animate="show"
@@ -82,10 +79,6 @@ const Navbar = () => {
             variants={navBarItemVariants}
             whileHover={{
               padding: "2rem 0 2rem 0",
-              // scale:2,
-              transition: {
-                // duration: 5,
-              },
             }}
           >
             <NavLink
@@ -93,7 +86,6 @@ const Navbar = () => {
               to={"/"}
               onClick={() => {
                 setCheckbox(false);
-                console.log(checkbox);
               }}
             >
               Home
@@ -103,10 +95,6 @@ const Navbar = () => {
             variants={navBarItemVariants}
             whileHover={{
               padding: "2rem 0 2rem 0",
-              // scale:2,
-              transition: {
-                // duration: 5,
-              },
             }}
           >
             <NavLink
@@ -114,7 +102,6 @@ const Navbar = () => {
               to={"/about"}
               onClick={() => {
                 setCheckbox(false);
-                console.log(checkbox);
               }}
             >
               Me
@@ -124,10 +111,6 @@ const Navbar = () => {
             variants={navBarItemVariants}
             whileHover={{
               padding: "2rem 0 2rem 0",
-              // scale:2,
-              transition: {
-                // duration: 5,
-              },
             }}
           >
             <NavLink
@@ -135,7 +118,6 @@ const Navbar = () => {
               to={"/work"}
               onClick={() => {
                 setCheckbox(false);
-                console.log(checkbox);
               }}
             >
               Work
@@ -145,10 +127,6 @@ const Navbar = () => {
             variants={navBarItemVariants}
             whileHover={{
               padding: "2rem 0 2rem 0",
-              // scale:2,
-              transition: {
-                // duration: 5,
-              },
             }}
           >
             <a
@@ -163,10 +141,6 @@ const Navbar = () => {
             variants={navBarItemVariants}
             whileHover={{
               padding: "2rem 0 2rem 0",
-              // scale:2,
-              transition: {
-                // duration: 5,
-              },
             }}
           >
             <a
@@ -193,10 +167,6 @@ const Navbar = () => {
             variants={navBarItemVariants}
             whileHover={{
               padding: "2rem 0 2rem 0",
-              // scale:2,
-              transition: {
-                // duration: 5,
-              },
             }}
           >
             <a

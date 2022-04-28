@@ -3,7 +3,6 @@
   font-size: 1.05rem;
   font-weight: 300;
   margin: 0 3.8rem 0 1.2rem;
-  // padding: 0.8rem ;
   @media (min-width: $breakpoint-s) {
     font-size:1.2rem;
     margin: 0 3rem 0 1.2rem;
@@ -22,23 +21,20 @@
     margin: 0 3rem 0 1.6rem;
 
   }
-  .subTitle-char {
-    // display: inline;
-  }
   .subTitle-cursor {
     background-color: red;
-    height: 1.2rem;
+    height: 1.05rem;
     width: 0.7rem;
     display: inline-block;
     margin-left: 0.3rem;
-    top: 0.2rem;
+    top: 0.13rem;
     position: relative;
     @media (min-width: $breakpoint-s) {
-      height: 1.3rem;
+      height: 1.2rem;
       width: 0.78rem;
     }
     @media (min-width: $breakpoint-m) {
-      height: 1.5rem;
+      height: 1.3rem;
       width: 0.8rem;
     }
     @media (min-width: $breakpoint-l) {

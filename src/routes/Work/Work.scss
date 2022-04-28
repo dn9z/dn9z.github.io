@@ -1,31 +1,21 @@
-// .title-anim-container.work-title{
-//   height: 7rem;
-// }
-.gallery{
+@import "../../components/resources/var";
+.gallery {
   margin: 3rem;
-  .card-container{
-    margin-bottom: 5rem;
-    .tilt-container{
+  display: flex;
+  flex-wrap: wrap;
+  .card-container {
+    margin: 1rem;
+    .tilt-container {
       transform-style: preserve-3d;
       width: 15rem;
       height: 21rem;
       background-color: rgb(39, 63, 197);
-      // border: 2px solid white;
-      // border-radius: 0.5rem;
-      // &:first-child{
-      //   background-color: red;
-      // }
-      
-        img{
-          width: 100%;
-          // padding: 1rem;
-          // border-radius: 0.5rem;
-        }
-        .layer-3d{
-          transform: translateZ(60px);
-      
-        }
+      img {
+        width: 100%;
       }
+      .layer-3d {
+        transform: translateZ(60px);
+      }
+    }
   }
 }
-

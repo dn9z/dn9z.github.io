@@ -19,15 +19,7 @@ const Background = () => {
         particlesArrayRef.current.push(new Particle(ctx));
       }
     }
-    console.log(particlesArrayRef.current.length);
     function render() {
-      // if (particlesArrayRef.current.length < 20) {
-      //   for (let i = 0; i < 100; i++) {
-      //     particlesArrayRef.current.push(new Particle());
-      //   }
-      // }
-      // ctx.fillRect(0, 0, size, size);
-
       ctx.shadowBlur = 0;
       ctx.globalCompositeOperation = "source-over";
       ctx.clearRect(0, 0, canvas.width, canvas.height);

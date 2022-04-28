@@ -14,12 +14,8 @@ const MidBarAnim = () => {
   const tranformedBarSize = useTransform(scrollYProgress, inputRange, barSize);
 
   useEffect(() => {
-    // console.log(scrollYProgress);
-    // console.log(hookedYPostion);
-    // hook into the onChange, store the current value as state.
     scrollYProgress.onChange((v) => setHookedYPosition(v));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scrollYProgress]); //make sure to re-subscriobe when scrollYProgress changes
+  }, [scrollYProgress]); 
 
   const barVariants = {
     hidden: {
@@ -34,23 +30,6 @@ const MidBarAnim = () => {
         duration: 2,
       },
     },
-    // showAbout: (custom) => {
-    //   //custom can be removed
-    //   console.log(tranformedBarSize.current)
-    //   console.log(custom);
-    //   return {
-    //     y: 0,
-    //     // width:'2rem',
-    //     // height: "63vh",
-    //     // height: '60%',
-    //     // condition can potentially be removed
-    //     height:
-    //       location.pathname === "/" ? "64vh" : `${tranformedBarSize.current}vh`,
-    //     transition: {
-    //       duration: 2,
-    //     },
-    //   };
-    // },
     showDynamic: {
       y: 0,
       height: `${tranformedBarSize.current}vh`,
@@ -61,12 +40,8 @@ const MidBarAnim = () => {
 
     exit: {
       y: "30rem",
-      // transition: {
-      //   duration: 2,
-      // },
     },
   };
-  // console.log(location.pathname)
   return (
     <motion.div
       className="title-bar"

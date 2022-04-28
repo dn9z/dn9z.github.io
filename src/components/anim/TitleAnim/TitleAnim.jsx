@@ -53,20 +53,17 @@ const TitleAnim = ({ titleString, className, subTitleComp }) => {
     show: {
       transition: {
         delayChildren: 3.6,
-        // staggerChildren: 0.3,
         staggerChildren: location.pathname === "/" ? 0.3 : 0.2,
       },
     },
     showAbout: {
       transition: {
         delayChildren: 3.6,
-        // staggerChildren: 0.3,
         staggerChildren: location.pathname === "/" ? 0.3 : 0.2,
       },
     },
     exit: {
       transition: {
-        // delayChildren: 0.01,
         staggerChildren: 0.1,
       },
     },
@@ -112,7 +109,6 @@ const TitleAnim = ({ titleString, className, subTitleComp }) => {
                 className="title-cursor"
                 initial="hidden"
                 animate={location.pathname === "/" ? "showDelay" : "show"}
-                // exit={location.pathname === "/" && "exit"}
               ></motion.div>
             </motion.div>
           </div>

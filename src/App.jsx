@@ -16,13 +16,7 @@ function App() {
 
   return (
     <MyProvider>
-      {/* <AnimatePresence exitBeforeEnter> */}
-      <main
-      // Hide scrollbar for 8 seconds
-      // key={location.pathname}
-      // animate={{ overflowY: "visible", transition: { delay: 8 } }}
-      // exit={{ overflowY: "hidden" }}
-      >
+      <main>
         <Background />
         <Navbar />
         <section>
@@ -34,7 +28,7 @@ function App() {
             className="content-container"
             animate={
               location.pathname !== "/"
-                ? { y: "-10rem", transition: { delay: 2.3 } }
+                ? { y: "-10rem", transition: { delay: 3.5 } }
                 : ""
             }
             exit={{ transition: { duration: 1 } }}
@@ -51,7 +45,6 @@ function App() {
           </motion.div>
         </section>
       </main>
-      {/* </AnimatePresence> */}
     </MyProvider>
   );
 }
