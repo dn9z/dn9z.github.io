@@ -57,7 +57,7 @@ const About = () => {
             }}
             exit={{ y: "100vh" }}
           >
-            Professional:
+            Technology:
           </motion.span>
           <motion.span
             initial={{ y: "100vh", opacity: 0 }}
@@ -77,7 +77,7 @@ const About = () => {
             transition={{ delayChildren: 6.8, staggerChildren: 0.2 }}
             initial="hidden"
             animate="show"
-            exit={{ y: "-100vh" }}
+            exit={{ y: "-120vh" }}
           >
             <motion.li variants={skillItemVariants}>C/C++/C#</motion.li>
             <motion.li variants={skillItemVariants}>Java</motion.li>

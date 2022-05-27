@@ -34,6 +34,7 @@
     .skill-title-container {
       display: flex;
       margin-top: 1rem;
+     
       span {
         font-size: 1.3rem;
         font-weight: 100;
@@ -42,9 +43,15 @@
         @media (min-width: $breakpoint-s) {
           font-size: 1.8rem;
             padding-right: 2rem;
+            &:last-child{
+              margin-left: 0.6rem;
+            }
         }
         @media (min-width: $breakpoint-m) {
           padding-right: 3.8rem;
+          &:last-child{
+            margin-left: 1.1rem;
+          }
         }
         @media (min-width: $breakpoint-l) {
           padding-right: 5.7rem;
