@@ -52,14 +52,8 @@ const TitleAnim = ({ titleString, className, subTitleComp }) => {
   const titleContainerVariants = {
     show: {
       transition: {
-        delayChildren: location.pathname === "/" ? 2.8 : 1.2,
-        staggerChildren: location.pathname === "/" ? 0.25 : 0.15,
-      },
-    },
-    showAbout: {
-      transition: {
-        delayChildren: 0,
-        staggerChildren: location.pathname === "/" ? 0.2 : 0.15,
+        delayChildren: location.pathname === "/" ? 2.2 : 1.2,
+        staggerChildren: location.pathname === "/" ? 0.20 : 0.15,
       },
     },
     exit: {
@@ -99,7 +93,7 @@ const TitleAnim = ({ titleString, className, subTitleComp }) => {
               animate={
                 location.pathname === "/" && {
                   opacity: 0,
-                  transition: { delay: 7.1, duration: 0 },
+                  transition: { delay: 5.2, duration: 0 },
                 }
               }
               exit={{ opacity: 1, transition: { duration: 0 } }}
