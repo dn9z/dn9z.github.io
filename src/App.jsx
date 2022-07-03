@@ -16,7 +16,17 @@ function App() {
 
   return (
     <MyProvider>
-      <main>
+      <motion.main
+        animate={
+          location.pathname === "/about"
+          ? { 
+            overflowY: 'hidden',
+            maxHeight: '100vh'}
+          : { 
+            overflowY: 'auto',
+            maxHeight: 'none'}
+        }
+      >
         <Background />
         <Navbar />
         <section>
@@ -44,7 +54,7 @@ function App() {
             </AnimatePresence>
           </motion.div>
         </section>
-      </main>
+      </motion.main>
     </MyProvider>
   );
 }

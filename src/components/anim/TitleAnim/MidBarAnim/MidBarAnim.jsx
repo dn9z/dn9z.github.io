@@ -10,7 +10,7 @@ const MidBarAnim = () => {
   const [hookedYPostion, setHookedYPosition] = useState(0);
 
   const inputRange = [0, 1];
-  const barSize = [70, 150];
+  const barSize = [71, 120];
   const tranformedBarSize = useTransform(scrollYProgress, inputRange, barSize);
 
   useEffect(() => {
@@ -37,6 +37,13 @@ const MidBarAnim = () => {
         duration: 2,
       },
     },
+    showLong: {
+      y: 0,
+      height: `80vh`,
+      transition: {
+        duration: 2,
+      },
+    },
 
     exit: {
       y: "30rem",
@@ -47,7 +54,7 @@ const MidBarAnim = () => {
       className="title-bar"
       variants={barVariants}
       initial={location.pathname === "/" ? "hidden" : "transition"}
-      animate={location.pathname !== "/" ? "showDynamic" : "show"}
+      animate={location.pathname === "/work" ? "showDynamic" : location.pathname === "/about" ? 'showLong' : "show"}
       exit={location.pathname === "/" ? "hidden" : "transition"}
       custom={hookedYPostion}
     ></motion.div>

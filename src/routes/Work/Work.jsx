@@ -14,21 +14,13 @@ const workArray = [
 
   },
   {
-    name: "Lorem ipsum",
+    name: "Social Media Plattform - Coming Soon",
     pictureLink: "https://songline-marketing.de/wp-content/uploads/2021/08/image-placeholder.jpg",
     githubLink:'',
     liveLink:''
 
 
-  },
-  {
-    name: "Lorem ipsum",
-    pictureLink: "https://songline-marketing.de/wp-content/uploads/2021/08/image-placeholder.jpg",
-    githubLink:'',
-    liveLink:''
-
-
-  },
+  }
 ];
 
 const Work = () => {
