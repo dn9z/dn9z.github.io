@@ -40,7 +40,7 @@ const About = () => {
           exit={{ y: "100vh" }}
         >
           <p>
-            What I enjoy most, is creating experiences backed up by high usability and interaction. I
+            What I enjoy most is creating experiences backed up by high usability and interaction. I
             endorse efficiency and prefer minimalistic approaches. Perfectionistic as I am, I also
             like working pixel perfect and I absolutely love putting effort into creating dynamic
             and reusable code.
