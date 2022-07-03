@@ -35,7 +35,7 @@ const About = () => {
           animate={{
             y: 0,
             opacity: 1,
-            transition: { type: "spring", stiffness: 50, delay: 5.6 },
+            transition: { type: "spring", stiffness: 50, delay: 2.2 },
           }}
           exit={{ y: "100vh" }}
         >
@@ -53,7 +53,7 @@ const About = () => {
             animate={{
               y: 0,
               opacity: 1,
-              transition: { type: "spring", stiffness: 50, delay: 6 },
+              transition: { type: "spring", stiffness: 50, delay: 2.7 },
             }}
             exit={{ y: "100vh" }}
           >
@@ -64,7 +64,7 @@ const About = () => {
             animate={{
               y: 0,
               opacity: 1,
-              transition: { type: "spring", stiffness: 50, delay: 6.2 },
+              transition: { type: "spring", stiffness: 50, delay: 2.8 },
             }}
             exit={{ y: "100vh" }}
           >
@@ -74,7 +74,7 @@ const About = () => {
         <div className="skill-item-container">
           <motion.ul
             className="skills"
-            transition={{ delayChildren: 6.8, staggerChildren: 0.2 }}
+            transition={{ delayChildren: 3.2, staggerChildren: 0.2 }}
             initial="hidden"
             animate="show"
             exit={{ y: "-120vh" }}
@@ -91,7 +91,7 @@ const About = () => {
           </motion.ul>
           <motion.ul
             className="skills"
-            transition={{ delayChildren: 6.9, staggerChildren: 0.2 }}
+            transition={{ delayChildren: 3.3, staggerChildren: 0.2 }}
             initial="hidden"
             animate="show"
             exit={{ y: "-100vh" }}

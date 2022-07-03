@@ -27,21 +27,26 @@ const MidBarAnim = () => {
     show: {
       y: 0,
       transition: {
-        duration: 2,
+        duration: location.pathname === "/" ? 2: 1,
+        type: 'spring',
+        bounce: 0.15
+        // stiffness:50
       },
     },
     showDynamic: {
       y: 0,
       height: `${tranformedBarSize.current}vh`,
       transition: {
-        duration: 2,
+        duration: 1,
       },
     },
     showLong: {
       y: 0,
       height: `80vh`,
       transition: {
-        duration: 2,
+        duration: 1,
+        type: 'spring',
+        bounce: 0.15
       },
     },
 

@@ -44,7 +44,7 @@ const Work = () => {
         className="gallery"
         initial="hidden"
         animate="show"
-        transition={{ delayChildren: 5.9, staggerChildren: 0.5 }}
+        transition={{ delayChildren: 2.6, staggerChildren: 0.5 }}
       >
         {workArray.map((ele, i) => {
           return (

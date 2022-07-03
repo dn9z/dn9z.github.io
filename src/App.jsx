@@ -38,7 +38,7 @@ function App() {
             className="content-container"
             animate={
               location.pathname !== "/"
-                ? { y: "-10rem", transition: { delay: 3.5 } }
+                ? { y: "-10rem", transition: { delay: 2 } }
                 : ""
             }
             exit={{ transition: { duration: 1 } }}

@@ -29,7 +29,7 @@ const cursorVariants = {
   showDelay: {
     opacity: 0.18,
     transition: {
-      delay: 2,
+      delay: 1.2,
       duration: 0.8,
       repeat: Infinity,
     },
@@ -52,14 +52,14 @@ const TitleAnim = ({ titleString, className, subTitleComp }) => {
   const titleContainerVariants = {
     show: {
       transition: {
-        delayChildren: 3.6,
-        staggerChildren: location.pathname === "/" ? 0.3 : 0.2,
+        delayChildren: location.pathname === "/" ? 2.8 : 1.2,
+        staggerChildren: location.pathname === "/" ? 0.25 : 0.15,
       },
     },
     showAbout: {
       transition: {
-        delayChildren: 3.6,
-        staggerChildren: location.pathname === "/" ? 0.3 : 0.2,
+        delayChildren: 0,
+        staggerChildren: location.pathname === "/" ? 0.2 : 0.15,
       },
     },
     exit: {
@@ -99,7 +99,7 @@ const TitleAnim = ({ titleString, className, subTitleComp }) => {
               animate={
                 location.pathname === "/" && {
                   opacity: 0,
-                  transition: { delay: 8, duration: 0 },
+                  transition: { delay: 7.1, duration: 0 },
                 }
               }
               exit={{ opacity: 1, transition: { duration: 0 } }}
