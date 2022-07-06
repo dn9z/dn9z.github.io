@@ -6,16 +6,23 @@
   .card-container {
     margin: 1rem;
     .tilt-container {
+      border: 1px solid rgba(186, 186, 186, 0.247);
+      border-radius: 5px;
       transform-style: preserve-3d;
       width: 15rem;
       height: 21rem;
-      background-color: rgb(39, 63, 197);
+      background-color: rgba(39, 63, 197, 0.691);
       img {
         width: 100%;
+      }
+      .glare-wrapper{
+        border-radius: 5px!important
+
       }
       .layer-3d {
         transform: translateZ(60px);
         position: relative;
+        height: 3.45rem;
         .work-links-container{
           position: absolute;
           display: flex;
