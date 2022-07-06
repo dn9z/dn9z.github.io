@@ -36,9 +36,13 @@ const Background = () => {
         if (distance < 200) {
           let lightning = createLightning(i, distance);
           // console.log(i)
-          ctx.strokeStyle = "hsl(180, 80%, 80%)";
+          // ctx.strokeStyle = "hsl(180, 80%, 80%)";
+          let lightningColor = Math.floor(Math.random() * (220 - 100 + 1) + 100)
+          let lightningLightness = Math.floor(Math.random() * (85 - 75 + 1) + 75)
+          ctx.strokeStyle = `hsl(${lightningColor}, ${lightningLightness}%, ${lightningLightness}%)`; 
+
           ctx.beginPath();
-          ctx.lineWidth = 1;
+          ctx.lineWidth = 1.6;
           // ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
           // ctx.lineTo(mouse.x, mouse.y);
           // ctx.closePath()
