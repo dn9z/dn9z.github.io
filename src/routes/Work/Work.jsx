@@ -4,6 +4,7 @@ import TitleAnim from "../../components/anim/TitleAnim/TitleAnim";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import fitmeScreenshot from "../../components/resources/fitme.jpg";
+import nexusScreenshot from "../../components/resources/nexus.png";
 import portfolioScreenshot from "../../components/resources/portfolio.png";
 import workInProgressImage from "../../components/resources/work-in-progress.png";
 
@@ -22,9 +23,9 @@ const workArray = [
   },
   {
     name: "Social Media Plattform",
-    pictureLink: workInProgressImage,
+    pictureLink: nexusScreenshot,
     githubLink: "https://github.com/dn9z/nexus_social-media-platform",
-    liveLink: "",
+    liveLink: "https://nexus-social-media-plattform.herokuapp.com/",
   },
 ];
 
@@ -69,7 +70,7 @@ const Work = () => {
                 gyroscope={true}
               >
                 <img
-                  style={i === 1 ? { borderRadius: "5px 5px 0 0" } : { borderRadius: "none" }} // fix for border-radius not applying to fitme.png. 
+                  style={i === 1 || i === 2 ? { borderRadius: "5px 5px 0 0" } : { borderRadius: "none" }} // fix for border-radius not applying to fitme.png. 
                   src={ele.pictureLink}
                   alt=""
                 />

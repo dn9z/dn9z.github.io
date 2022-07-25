@@ -29,7 +29,7 @@ const SubTitleAnim = ({ subTitleString }) => {
   return (
     <motion.div
       className="subTitle"
-      transition={{ delayChildren: 5.8, staggerChildren: 0.05 }}
+      transition={{ delayChildren: 5.2, staggerChildren: 0.04 }}
       initial="hidden"
       animate="show"
       exit={{ y: "100vh", transition: { duration: 0.4 } }}

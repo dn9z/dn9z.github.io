@@ -34,30 +34,14 @@
     .skill-title-container {
       display: flex;
       margin-top: 1rem;
-     
+
       span {
         font-size: 1.3rem;
         font-weight: 100;
         font-family: "Merriweather";
-          padding-right: 2rem;
+        width: 15rem;
         @media (min-width: $breakpoint-s) {
           font-size: 1.8rem;
-            padding-right: 2rem;
-            &:last-child{
-              margin-left: 0.6rem;
-            }
-        }
-        @media (min-width: $breakpoint-m) {
-          padding-right: 3.8rem;
-          &:last-child{
-            margin-left: 1.1rem;
-          }
-        }
-        @media (min-width: $breakpoint-l) {
-          padding-right: 5.7rem;
-        }
-        @media (min-width: $breakpoint-xl) {
-          padding-right: 8.5rem;
         }
       }
     }
@@ -68,19 +52,9 @@
         list-style: none;
         font-size: 1.2rem;
         font-weight: 300;
-        margin: 0.3rem 0 0 0.3rem;
+        width: 15rem;
         @media (min-width: $breakpoint-s) {
-          margin: 0.5rem 1.5rem 0 0.3rem;
           font-size: 1.3rem;
-        }
-        @media (min-width: $breakpoint-m) {
-          margin: 0.5rem 3rem 0 0.4rem;
-        }
-        @media (min-width: $breakpoint-l) {
-          margin: 0.7rem 4.9rem 0 0.5rem;
-        }
-        @media (min-width: $breakpoint-xl) {
-          margin: 0.8rem 7rem 0 0.8rem;
         }
       }
     }
